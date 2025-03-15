@@ -1,0 +1,179 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.container a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container nav ul{
+    list-style-type: none;
+}
+
+.container nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.container .btn-contato {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(25, 25, 223);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-contato:hover{
+    box-shadow: 0px 0px 8px #ffffff;
+}
+
+/* ---- IMAGEM DO MENU ---- */
+
+.menu{
+    width: 65px;
+    height: 65px;
+    border: 3px solid rgb(25, 25, 223);
+    background-color: rgb(10, 10, 10);
+    border-radius: 175%;
+    box-sizing: border-box;
+    position: relative;
+    transform: scale(1.05);
+}
+
+.menu:hover{
+    box-shadow: 0px 0px 8px #3327dd;
+}
+
+.menu img{
+    width: 50px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
+.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-desktop ul li:hover{
+    transform: scale(1.2);
+}
+
+/* ESTILO DO TOPO DO SITE */
+img {
+    width: 275px;
+    height: auto;
+    position: static;
+    margin: 0px 50px 0px 0px;
+    border-radius: 25px;
+}
+
+.img-topo-site img{
+    box-shadow: 5px 10px 25px rgb(25, 25, 223);
+}
+
+
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+.topo-do-site h1{
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span{
+    color: rgb(25, 25, 223);
+}
+
+.txt-topo-site h2{
+    color: #7e7e7e;
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+    z-index: 1;
+    left: 3%;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #7e7e7e;
+    margin: 40px;
+}
+
+/* BOTÃO DE BAIXO */
+/* Para o botão de contato flutuante */
+.btn-contato-flutuante {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(25, 25, 223); /* Cor de fundo */
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    color: blue;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave ao passar o mouse */
+    position: fixed;  /* Deixa o botão flutuando */
+    left: 20px;   /* Mova para a esquerda (ajuste esse valor conforme necessário) */
+    bottom: 20px; /* Defina a distância da parte inferior da tela (ajuste conforme necessário) */
+}
+
+.btn-contato-flutuante a {
+    text-decoration: none; /* Retira o sublinhado do link */
+    color: blue;
+}
+
+.btn-contato-flutuante:hover {
+    transform: scale(1.1); /* Aumenta o botão quando passar o mouse */
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4), 0px -12px 30px rgba(0, 17, 255, 0.6); /* Aumenta a sombra */
+}
+
