@@ -89,7 +89,13 @@ body {
     left: 5px;
 }
 
+.menu-desktop{
+    display: flex;
+}
+
 .menu-desktop ul li {
+    background-color: rgb(25, 25, 223);
+    border-radius: 80%;
     display: inline-block;
     padding: 0 40px;
     transition: transform 0.3s ease-in-out;
@@ -98,6 +104,7 @@ body {
 .menu-desktop ul li:hover{
     transform: scale(1.2);
 }
+
 
 /* ESTILO DO TOPO DO SITE */
 img {
@@ -153,23 +160,14 @@ section.topo-do-site .flex{
 /* Para o botão de contato flutuante */
 .btn-contato-flutuante {
     padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
     background-color: rgb(25, 25, 223); /* Cor de fundo */
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-    text-align: center;
-    color: blue;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave ao passar o mouse */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Efeito suave ao passar o mouse */
     position: fixed;  /* Deixa o botão flutuando */
     left: 20px;   /* Mova para a esquerda (ajuste esse valor conforme necessário) */
     bottom: 20px; /* Defina a distância da parte inferior da tela (ajuste conforme necessário) */
-}
-
-.btn-contato-flutuante a {
-    text-decoration: none; /* Retira o sublinhado do link */
-    color: blue;
 }
 
 .btn-contato-flutuante:hover {
@@ -177,3 +175,11 @@ section.topo-do-site .flex{
     box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4), 0px -12px 30px rgba(0, 17, 255, 0.6); /* Aumenta a sombra */
 }
 
+button {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(25, 25, 223);
+    border: 0;
+}
